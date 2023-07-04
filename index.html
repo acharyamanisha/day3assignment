@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day 3 assignment</title>
+  </head>
+  <body>
+    <div id="textDiv">“I will change my color according to your choice”</div>
+    <br />
+    <input
+      type="text"
+      id="colorInput"
+      placeholder="enter your choice of color" />
+
+    <br />
+    <button onclick="changeColor()">change color</button>
+    <script>
+      function changeColor() {
+        var color = document.getElementById("colorInput").value;
+        var div = document.getElementById("textDiv");
+        div.style.color = color;
+      }
+
+      const animals = ['dogs', 'cats', 'rabbits', 'mice'];
+      animals.forEach((animal) => {
+        const included = animal.includes("a");
+        console.log(`${animal}: ${included}`);
+      })
+
+      const filteredArr = animals.filter((animal) => {
+        return animal.includes("a");
+      });
+      console.log(filteredArr);
+      newArray = ['apple', 'pineapple','dog','joke']
+function narr(name)
+{
+    return name.includes('a')
+}
+console.log(newArray.filter(narr));
+
+
+const nowDate = new Date()
+console.log(nowDate);
+console.log(nowDate.getDate());
+console.log(nowDate.getDay());
+console.log(nowDate.getFullYear());
+console.log(nowDate.getHours());
+console.log(nowDate.getMilliseconds());
+console.log(nowDate.getMinutes());
+console.log(nowDate.getMonth());
+console.log(nowDate.getSeconds());
+console.log(nowDate.getTime());
+console.log(nowDate.getTimezoneOffset());
+console.log(nowDate.getUTCDate());
+
+    </script>
+  </body>
+</html>
+
